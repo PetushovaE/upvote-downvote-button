@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Upvote/downvote</title>
+	<h2>Upvote/Downvote</h2>
+			<style type="text/css">
+			* {
+		  box-sizing: border-box;
+		}
+
+		h2 {
+			text-align: center;
+		}
+		#count {
+		  background: #9F0;
+		  width: 10%;
+		  height: 100px;
+		  text-align: center;
+		  line-height: 100px;
+		  font-size: 64px;
+		  margin: 0;
+		  border: 3px solid green;
+		  border-radius: 5px;
+		}
+
+		button {
+		  background: #09F;
+		  width: 5%;
+		  height: 50px;
+		  text-align: center;
+		  line-height: 50px;
+		  font-size: 32px;
+		  border: 3px solid blue;
+		  border-radius: 5px;
+		}
+
+		button, #count {
+		  float: left;
+		}
+
+		#minus {
+		  margin: 25px 2.5% 0 37.5%;
+		}
+
+		#plus {
+		  margin: 25px 37.5% 0 2.5%;
+		}</style>
+		</head>
+
+			<body>
+				<button id="minus">-</button>
+				<p id="count">0</p>
+				<button id="plus">+</button>
+
+				<script
+					  src="https://code.jquery.com/jquery-3.2.1.slim.js"
+					  integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg="
+					  crossorigin="anonymous"></script>
+
+				<script type="text/javascript">
+					
+					var counter = 0;
+
+					$("#plus").on("click",function(){
+						counter++;
+						$("#count").text(counter);
+					});
+
+					$("#minus").on("click",function(){
+						counter--;
+						$("#count").text(counter);
+					});
+
+				</script>
+
+
+
+			</body>
+</html>
+
+
